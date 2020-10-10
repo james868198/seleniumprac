@@ -1,5 +1,8 @@
 package SeleniumTest;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
@@ -23,8 +26,8 @@ public final class App {
 		//System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
 
-        String baseUrl = "http://demo.guru99.com/test/newtours/";
-        String expectedTitle = "Welcome: Mercury Tours";
+        String baseUrl = "https://www.scu.edu/";
+        String expectedTitle = "Home - Santa Clara University";
         String actualTitle = "";
 
         // launch Fire fox and direct it to the Base URL
@@ -42,6 +45,17 @@ public final class App {
         } else {
             System.out.println("Test Failed");
         }
+
+        // test search function
+
+        // WebElement searchInput = driver.findElement(By.id("cheese"));
+        // WebElement searchBtn = driver.findElement(By.cssSelector("#input-group-text#btn#btn-light"));
+        // String searchingMessage = "Computer Science";
+        // searchInput.sendKeys(searchingMessage);
+        // searchBtn.click();
+
+
+        // test get start
 
         //close Fire fox
         driver.close();
