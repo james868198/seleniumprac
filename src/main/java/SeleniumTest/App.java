@@ -1,9 +1,9 @@
-package SeleniumTest;
+package seleniumtest;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+// import org.openqa.selenium.WebElement;
+// import org.openqa.selenium.By;
 
 /**
  * Hello world!
@@ -20,11 +20,11 @@ public final class App {
         System.out.println("This is my first Selenium testing!");
 
         // declaration and instantiation of objects/variables
-    	System.setProperty("webdriver.gecko.driver","/Users/james/java_resources/Selenium/drivers/geckodriver");
-		WebDriver driver = new FirefoxDriver();
-		//comment the above 2 lines and uncomment below 2 lines to use Chrome
-		//System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
-		//WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "/Users/james/java_resources/Selenium/drivers/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        //comment the above 2 lines and uncomment below 2 lines to use Chrome
+        //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
+        //WebDriver driver = new ChromeDriver();
 
         String baseUrl = "https://www.scu.edu/";
         String expectedTitle = "Home - Santa Clara University";
@@ -40,7 +40,7 @@ public final class App {
          * compare the actual title of the page with the expected one and print
          * the result as "Passed" or "Failed"
          */
-        if (actualTitle.contentEquals(expectedTitle)){
+        if (actualTitle.contentEquals(expectedTitle)) {
             System.out.println("Test Passed!");
         } else {
             System.out.println("Test Failed");
