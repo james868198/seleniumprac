@@ -1,4 +1,4 @@
-package seleniumtest;
+package seleniumprac;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
